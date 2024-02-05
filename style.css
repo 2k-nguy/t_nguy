@@ -25,3 +25,9 @@ body{
     flex-grow: 0;
 }
 
+@media screen and (max-width: 1088px) {
+    .navbar.is-info .navbar-menu {
+      background-color: #209cee;
+      color: white;
+    }
+  }
