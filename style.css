@@ -1,0 +1,27 @@
+body{
+    font-family: 'Lexend', sans-serif;
+    background-color:aliceblue;
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-menu {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.navbar-center {
+    flex-grow: 0;
+}
+
