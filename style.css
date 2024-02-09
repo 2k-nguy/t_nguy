@@ -1,9 +1,7 @@
-body{
+.body{
     font-family: 'Lexend', sans-serif;
     background-color:aliceblue;
 }
-
-
 
 .navbar{
     display: flex;
@@ -52,6 +50,8 @@ body{
     
   }
 
+
+  
 @media screen and (max-width: 1088px) {
     .navbar.is-info .navbar-menu {
       background-color: #209cee;

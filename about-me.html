@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #vanta {
+            height: 30vh;
+            width: 100%;
+            position: relative;
+        }
+        .vanta-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    
     <title>Portfolio Website</title>
 
     
@@ -18,17 +32,16 @@
             </a>
         </div>
         <div id="navbar" class="navbar-menu">
-                <a class="navbar-item" href="#home">Home</a>
-                <a class="navbar-item" href="#about">About me</a>
-                <a class="navbar-item" href="#contact">Contact me</a>
-                <a class="navbar-item" href="#projects">Projects</a>
+            <a href = "home.html" class="navbar-item" href="#home">Home</a>
+            <a href = "about-me.html" class="navbar-item" href="#about">About me</a>
+            <a href = "contact-me.html" class="navbar-item" href="#contact">Contact me</a>
+            <a href = "projects.html" class="navbar-item" href="#projects">Projects</a>
         </div>
     </nav>
 
     <div id="vanta">
         <div class="vanta-text">
-          <h1>Thienkim Nguyen</h1>
-          <h3>Actively seeking a job in tech</h3>
+          <h1>About Me</h1>
         </div>
       </div>
 
@@ -39,59 +52,46 @@
     <!-- Home Section -->
     <section id="home" class="section">
         <div class="container">
+
                     <p class="subtitle">
+
                         <p>Hello! I'm Thienkim Nguyen, a Computer Science student with a passion for data science and software engineering. With a strong foundation in programming languages such as Python, Java, and C, I've developed a keen eye for problem-solving and data analysis.</p>
 
-    <p>My journey in the tech industry began with participation in Google's Computer Science Summer Institute, where I immersed myself in project-based learning and collaborated with industry professionals. During my internship at Enterprise Hall, I leveraged my web development expertise to create impactful digital solutions aligned with organizational objectives. Through involvement in Girls Who Code, I demonstrated my commitment to using technology for social good by developing a Python-based chatbot addressing gender inequality.</p>
+                        <br>
 
-    <p>I am particularly skilled in utilizing Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn, as showcased in my YouTube API Data Analysis project. Additionally, my projects like Space Challenge and Connect4 demonstrate my proficiency in software development methodologies and user-centric design.</p>
+                        <p>My journey in the tech industry began with participation in Google's Computer Science Summer Institute, where I immersed myself in project-based learning and collaborated with industry professionals. During my internship at Enterprise Hall, I leveraged my web development expertise to create impactful digital solutions aligned with organizational objectives. Through involvement in Girls Who Code, I demonstrated my commitment to using technology for social good by developing a Python-based chatbot addressing gender inequality and mentored new members.</p>
 
-    <p>As a lifelong learner, I am always eager to explore new innovations in the tech industry, particularly in the fields of AI, data science, and machine learning. I am actively seeking opportunities as a research assistant, software engineering intern, data science intern, machine learning intern, or teaching assistant to further expand my knowledge and contribute to innovative projects.</p>
+                        <br>
 
+                        <p>I am particularly skilled in utilizing Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn, as showcased in my YouTube API Data Analysis project. Additionally, my projects like Space Challenge and Connect4 demonstrate my proficiency in software development methodologies and user-centric design.</p>
 
-    <p>Let's connect and explore opportunities to collaborate on exciting projects in the dynamic world of technology!</p>science intern, machine learning intern, or teaching assistant to further expand my knowledge and contribute to innovative projects.
-                        
-                        Let's connect and explore opportunities to collaborate on exciting projects in the dynamic world of technology!
+                        <br>
+
+                        <p>As a lifelong learner, I am always eager to explore new innovations in the tech industry, particularly in the fields of AI, data science, and machine learning. I am actively seeking opportunities as a research assistant, software engineering intern, data science intern, machine learning intern, or teaching assistant to further expand my knowledge and contribute to innovative projects.</p>
+
+                        <br>
+
+                        <p>Let's connect and explore opportunities to collaborate on exciting projects in the dynamic world of technology!</p>
                     </p>
+
+                    <!-- Embed Resume PDF Here -->
+                <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+                    <object
+                        type="application/pdf"
+                        data="Thienkim-Nguyen-Resume-PC.pdf"
+                        width="600"
+                        height="800"
+                    >
+                        <a href="Thienkim-Nguyen-Resume-PC.pdf" class="button is-primary" download = "Thienkim-Nguyen-Resume.pdf">View Resume</a>
+                    </object>
+                </div>
+
                     <!-- You can add an image or any other content in the second column -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
-        <div class="container is-flex">
-            <div>
-                <h2 class="title">About Me</h2>
-                <p class="content">Summary about yourself, background, skills, and interests.</p>
-                <a href="Thienkim-Nguyen-Resume-PC.pdf"class="button is-primary" download = "Thienkim-Nguyen-Resume.pdf">View Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Other Sections (Contact Me, Projects) ... -->
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container is-flex">
-            <div>
-                <h2 class="title">Projects</h2>
-                <p class="content">Here are some of the projects I've done</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="about" class="section">
-        <div class="container is-flex">
-            <div class = "ways-to-contact">
-                <h2 class="title">Contact Me</h2>
-                <p class="content">Let's get in Touch!</p>
-                <a href="mailto:thienkimnguyen6104@gmail.com" class="button is-primary" target="_blank">thienkimnguyen6104@gmail.com</a>
-            </div>
-        </div>
-    </section>
 
 </body>
 
