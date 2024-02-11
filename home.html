@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <audio id="onload-sound" src="onload sound.wav" preload="auto"></audio>
     <title>Portfolio Website</title>
 
     
 </head>
-<body>
+<body class="animate-on-load">
 
     <!-- Navigation Bar -->
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
@@ -22,13 +23,13 @@
             <a href = "about-me.html" class="navbar-item" href="#about">About me</a>
             <a href = "contact-me.html" class="navbar-item" href="#contact">Contact me</a>
             <a href = "projects.html" class="navbar-item" href="#projects">Projects</a>
-    </div>
+        </div>
     </nav>
 
     <div id="vanta">
         <div class="vanta-text">
-          <h1>Thienkim Nguyen</h1>
-          <h3>Actively seeking a job in tech</h3>
+          <h1 id = "name"></h1>
+          <h3 id = "job"></h3>
         </div>
       </div>
 
