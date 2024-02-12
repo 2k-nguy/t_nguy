@@ -1,6 +1,6 @@
 # Nguyen-CS395-Midterm
  
-This is my personal portfolio website where I showcase my projects and skills. 
+This is my personal [portfolio website](https://uprise6104.github.io/Nguyen-CS395-Midterm/index.html) where I showcase my projects and skills. 
 
 ## Technologies Used
 
