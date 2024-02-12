@@ -55,7 +55,11 @@
   #projects-page #vanta {
       height: 30vh;
       width: 100%;
-      position: relative;
+      position: flex;
+  }
+
+  #about {
+    margin-top: 50px; /* Adjust as needed */
   }
 
   #about-me-page .vanta-text,
