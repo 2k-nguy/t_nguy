@@ -58,9 +58,6 @@
       position: flex;
   }
 
-  #about {
-    margin-top: 50px; /* Adjust as needed */
-  }
 
   #about-me-page .vanta-text,
   #home-page .vanta-text,
@@ -106,6 +103,9 @@
 @media screen and (max-width: 768px) {
   #navbar {
       flex-direction: column;
+  }
+  #about {
+    margin-top:200px; /* Adjust as needed */
   }
 }
 
