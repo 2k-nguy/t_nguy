@@ -68,3 +68,9 @@ document.addEventListener('DOMContentLoaded', function() {
     typeText(aboutMe, aboutMeElement);
     typeText(contactMe, contactMeElement);
 });
+
+
+window.addEventListener('load', function() {
+    var sound = document.getElementById('loading-sound');
+    sound.play();
+});
