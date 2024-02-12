@@ -50,6 +50,23 @@
     
   }
 
+  #about-me-page #vanta,
+  #contact-me-page #vanta,
+  #projects-page #vanta {
+      height: 30vh;
+      width: 100%;
+      position: relative;
+  }
+
+  #about-me-page .vanta-text,
+  #home-page .vanta-text,
+  #projects-page .vanta-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
   @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -81,19 +98,11 @@
   #navbar {
       flex-direction: column;
   }
-
-  .navbar-item {
-      /* Adjust styles as needed for smaller screens */
-  }
 }
 
 /* CSS for screens larger than 768px (typically tablets, laptops, and desktops) */
 @media screen and (min-width: 769px) {
   #navbar {
       flex-direction: row;
-  }
-
-  .navbar-item {
-      /* Adjust styles as needed for larger screens */
   }
 }
