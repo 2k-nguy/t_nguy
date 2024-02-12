@@ -11,9 +11,6 @@ VANTA.NET({
     backgroundColor: 0x3f
   })
 
-// Select the audio element
-const audio = document.getElementById('onload-sound');
-
 // The text you want to type out
 const name = 'Thienkim Nguyen';
 const job = 'Actively seeking a job in tech';
@@ -40,10 +37,34 @@ function typeText(text, element, delay = 100) {
 }
 
 // Type out the text when the page loads
-window.onload = () => {
-    audio.play();
-    typeText(name, nameElement);
+document.addEventListener('DOMContentLoaded', function() {
+  const audio = document.getElementById('onload-sound');
+    const muteButton = document.getElementById('mute-button');
+    const muteIcon = muteButton.querySelector('i');
+
+    // Check if 'muted' data exists in localStorage and apply it
+    if (localStorage.getItem('muted') === 'true') {
+        audio.muted = true;
+        muteIcon.classList.remove('fa-volume-up');
+        muteIcon.classList.add('fa-volume-mute');
+    } else {
+        audio.play();
+    }
+
+    muteButton.addEventListener('click', function() {
+        audio.muted = !audio.muted;
+        // Store 'muted' data in localStorage
+        localStorage.setItem('muted', audio.muted);
+        if (audio.muted) {
+            muteIcon.classList.remove('fa-volume-up');
+            muteIcon.classList.add('fa-volume-mute');
+        } else {
+            muteIcon.classList.remove('fa-volume-mute');
+            muteIcon.classList.add('fa-volume-up');
+        }
+    });
+  typeText(name, nameElement);
     typeText(job, jobElement);
     typeText(aboutMe, aboutMeElement);
-    typeText(contactMe, contactMeElement)
-};
+    typeText(contactMe, contactMeElement);
+});
