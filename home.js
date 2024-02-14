@@ -9,19 +9,21 @@ VANTA.NET({
     scaleMobile: 1.00,
     color: 0x3fd5ff,
     backgroundColor: 0x3f
-  })
+})
 
 // The text you want to type out
 const name = 'Thienkim Nguyen';
 const job = 'Actively seeking a job in tech';
 const aboutMe = "About Me";
-const contactMe = "Contact Me"
+const contactMe = "Contact Me";
+const projects = "Projects";
 
 // The HTML elements you want to type the text into
 const nameElement = document.getElementById('name');
 const jobElement = document.getElementById('job');
-const aboutMeElement = document.getElementById('about me')
-const contactMeElement = document.getElementById('contact me')
+const aboutMeElement = document.getElementById('about me');
+const contactMeElement = document.getElementById('contact me');
+const projectsElement = document.getElementById('projects');
 
 // Function to type out text into an element
 function typeText(text, element, delay = 100) {
@@ -38,7 +40,7 @@ function typeText(text, element, delay = 100) {
 
 // Type out the text when the page loads
 document.addEventListener('DOMContentLoaded', function() {
-  const audio = document.getElementById('onload-sound');
+    const audio = document.getElementById('onload-sound');
     const muteButton = document.getElementById('mute-button');
     const muteIcon = muteButton.querySelector('i');
 
@@ -63,12 +65,23 @@ document.addEventListener('DOMContentLoaded', function() {
             muteIcon.classList.add('fa-volume-up');
         }
     });
-  typeText(name, nameElement);
+
+    typeText(name, nameElement);
     typeText(job, jobElement);
     typeText(aboutMe, aboutMeElement);
     typeText(contactMe, contactMeElement);
-});
+    typeText(projects, projectsElement);
 
+    // Add sound effect to buttons
+    document.querySelectorAll('.button.is-info').forEach(button => {
+        button.addEventListener('click', function() {
+            if (!audio.muted) { // Only play the sound if the main audio is not muted
+                var sound = document.getElementById('onload-sound');
+                sound.play();
+            }
+        });
+    });
+});
 
 window.addEventListener('load', function() {
     var sound = document.getElementById('loading-sound');
