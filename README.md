@@ -1,4 +1,4 @@
-# Nguyen-CS395-Midterm
+# Portfolio Website
  
 This is my personal [portfolio website](https://uprise6104.github.io/Nguyen-CS395-Midterm/index.html) where I showcase my projects and skills. I also added sound effects to feel more imersive.
 
