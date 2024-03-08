@@ -1,4 +1,4 @@
-# Nguyen-CS395-Midterm
+# Portfolio Website
  
 This is my personal [portfolio website](https://2k-nguy.github.io/t_nguy/) where I showcase my projects and skills. I also added sound effects to feel more imersive.
 Here's a link to [my repository](https://github.com/2k-nguy/t_nguy)
